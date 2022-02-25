@@ -124,7 +124,7 @@ Submarine Cable Map:
 *	`<input>`:
 	*	`type`= `"text"`, `"submit"`, `"reset"`, `"email"`, `"date"`, `"radio"`, `"password"`
 	*	`required`, `value`, `name`, `min`
-*	dropdown `<select>`
+*	dropdown `<select>` multiple
 	*	option `<option>`
 *	comment `<!-- -->`
 *	`<div>` and `<span>`
@@ -198,11 +198,11 @@ Selector {
 *	`#id`
 *	`*` (all elements)
 *	`element`
-*	`element, element`
-*	`element element`
-*	`element > element`
-*	`element + element`
-*	`v:hover`
+*	`element, element` both
+*	`element element` `h2 p` any p inside h2  
+*	`element > element`  `h2 p` all p having parent h2
+*	`element + element` any p right after h2
+*	`v:hover`  `h2+p:hover`
 *	`:last-child`
 *	`:first-child`
 *	`::before` (pseudo-element)
